@@ -7,7 +7,7 @@ class NeuralNetwork:
         self.learning_rate = learning_rate
 
         # Initialize weights and biases
-        self.W1 = np.random.randn(input_size, hidden_size) * 0.1
+        self.W1 = np.abs(np.random.randn(input_size, hidden_size)) * 0.1
         self.b1 = np.zeros((1, hidden_size))
 
         self.W2 = np.random.randn(hidden_size, output_size) * 0.1
