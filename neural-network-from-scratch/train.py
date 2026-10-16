@@ -3,7 +3,7 @@ import numpy as np
 from neural_network import NeuralNetwork
 
 
-# Training data
+
 X = np.array([
     [1.0, 2.0],
     [2.0, 3.0],
@@ -23,7 +23,7 @@ y = np.array([
 ])
 
 
-# Create model
+
 model = NeuralNetwork(
     input_size=2,
     hidden_size=4,
@@ -32,11 +32,10 @@ model = NeuralNetwork(
 )
 
 
-# Train
+
 model.train(X, y, epochs=1000)
 
 
-# Final predictions
 predictions = model.forward(X)
 
 print("\nPredictions:")
